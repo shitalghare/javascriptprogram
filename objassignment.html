@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 1. *Creating and Accessing Properties:*
+//    - Create an object representing a car with properties like `make`, `model`, and `year`. Access and display these properties.
+
+//var car = {
+//   make: "Tata",
+//   model: "Safari",
+//   year: 2023
+// };
+//   console.log("Make: " + car.make);
+//   console.log("Model: " + car.model);
+//   console.log("Year: " + car.year);
+
+// 2. *Object Manipulation:*
+//    - Add a new property to the car object (e.g., `color`). Update and display the modified object.
+
+// var car = {
+//   make: "Tata",
+//   model: "Safari",
+//   year: 2023
+// };
+
+// car.color = "Black";
+
+// console.log(car);
+
+// 3. *Object Comparison:*
+//    - Create two car objects with similar and different properties. 
+//    Compare them for equality using `==` and `===` operators.
+
+// var car1 = {
+//   make: "Tata",
+//   model: "Safari",
+//   year: 2022
+// };
+
+// var car2 = {
+//   make: "hyundai ",
+//   model: "Tucson",
+//   year: 2022
+// };
+
+// var car3 = {
+//   make: "Honda",
+//   model: "Amaze",
+//   year: 2023
+// };
+
+// console.log("car1 == car2 is " + (car1 == car2));
+// console.log("car1 === car2 is " + (car1 === car2));
+// console.log("car1 == car3 is " + (car1 == car3));
+// console.log("car1 === car3 is " + (car1 === car3));
+
+// 4. *Object Methods:*
+//    - Define a method within the car object (e.g., `displayInfo`) that displays all the properties of the car.
+
+const car = {
+  make: 'Tata',
+  model: 'Safari',
+  year: 2023,
+  color: 'Black',
+  displayInfo: function() {
+    for (let key in this) {
+      if (this.hasOwnProperty(key)) {
+        console.log(`${key}: ${this[key]}`);
+      }
+    }
+  }
+};
+
+car.displayInfo()
+
+// 5. *Object Iteration:*
+//    - Create an object with multiple properties. Use a `for...in` loop to iterate through
+//     the object and display its properties and values.
+
+// var person = {
+//   firstName: "Shital",
+//   lastName: "Ghare",
+//   age: 21,
+//   email: "shitalghare1211@gmail.com",
+//   occupation: "full stack developer"
+// };
+
+// for (var key in person) {
+//   if (person.hasOwnProperty(key)) {
+//     console.log(key + ": " + person[key]);
+//   }
+// }
+
+
+// 6. *Nested Objects:*
+//    - Create an object to represent a person with properties like `name`, `age`, and `address`. Include a nested object for their `contact` details (e.g., `email`, `phone`).
+
+// var person = {
+//   name: "Shital Ghare",
+//   age: 21,
+//   address: "123 Main Street, Cityville",
+//   contact: {
+//     email: "shitalghare1211@gmail.com",
+//     phone: "8972314481"
+//   }
+// };
+
+// console.log("Name: " + person.name);
+// console.log("Age: " + person.age);
+// console.log("Address: " + person.address);
+// console.log("Email: " + person.contact.email);
+// console.log("Phone: " + person.contact.phone);
+
+
+// 7. *Object Array:*
+//    - Create an array of objects, each representing a different person with properties like `name`, `age`,
+//     and `occupation`. Display details of all the persons.
+
+// const people = [
+//   { name: 'John Doe', age: 30, occupation: 'Engineer' },
+//   { name: 'Alice Smith', age: 25, occupation: 'Teacher' },
+//   { name: 'Bob Johnson', age: 35, occupation: 'Doctor' },
+//   { name: 'Sarah Brown', age: 28, occupation: 'Artist' }
+// ];
+
+//   console.log('Person Details:');
+//   console.log(`Name: ${person.name}`);
+//   console.log(`Age: ${person.age}`);
+//   console.log(`Occupation: ${person.occupation}`);
+//   console.log('------------------------');
+// }
+
+// 8. *Object Deletion:*
+//    - Remove a property from the car object, such as the `year`, and display the modified object.
+
+// const car = {
+//   make: 'Toyota',
+//   model: 'Camry',
+//   year: 2022,
+//   color: 'Blue'
+// };
+
+// delete car.year;
+// console.log(car);
+
+
+// 9. *Object Property Check:*
+//    - Check if a property exists in an object (e.g., check if the car object has a `color` property).
+
+// const car = {
+//   make: 'Tata',
+//   model: 'Safari',
+//   year: 2023
+// };
+// if ('color' in car) {
+//   console.log('The car has a color property.');
+// } else {
+//   console.log('The car does not have a color property.');
+// }
+
+
+// 10. *Object Cloning:*
+// - Create a new object and copy properties from an existing object (e.g., the car object) to this new object. Display the new object's properties.
+
+// const car = {
+//   make: "Tata",
+//   model: "Safari",
+//   year: 2023
+// };
+
+// const additionalProperties = {
+//   color: "Blue",
+//   price: 1500000
+// };
+
+// const newCar = Object.assign({}, car, additionalProperties);
+
+// console.log(newCar);
+
+    </script>
+
+</body>
+</html> 
